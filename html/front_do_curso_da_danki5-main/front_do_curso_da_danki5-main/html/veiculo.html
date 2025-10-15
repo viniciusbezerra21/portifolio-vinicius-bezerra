@@ -1,0 +1,188 @@
+!
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto 5">
+    <meta name="author" content="Vinicius">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Projeto 5</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header style="border-bottom: 3px solid red;">
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/logo.jpg">
+            </div><!--logo-->
+
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a style="color: red;"" href=" venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav><!--desktop-->
+            <nav class="mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a style="color: red;" href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav><!--mobile-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <section class="venda-single">
+        <div class="line-titulo">
+            <div class="ln1"></div><!--ln1-->
+            <h2>Veículos para venda</h2>
+        </div><!--line-titulo-->
+        <div class="container">
+
+            <div class="info-veiculo">
+                <div class="info-bread">
+                    <a href="index.html">HOME</a><span>></span>
+                    <a href="venda.html">VENDA</a><span>></span>
+                    <a href="veiculo.html">VEICULOS DE TESTE</a>
+                </div>
+                <div class="foto-destaque" style="background-image: url('../assets/carro1.jpg');"></div>
+                <div class="nav-galeria-parent">
+                    <div class="arrow-left-nav"></div>
+                    <div class="arrow-right-nav"></div>
+                    <div class="nav-galeria">
+                        <div class="nav-galeria-wraper">
+
+                            <div class="mini-img-wraper" style="background-color: rgb(210, 210, 210);">
+                                <div class="mini-img" style="background-image: url('../assets/carro1.jpg');"></div>
+                            </div><!--mini-img-wraper-->
+                            <div class="mini-img-wraper">
+                                <div class="mini-img" style="background-image: url('../assets/carro1.jpg');"></div>
+                            </div><!--mini-img-wraper-->
+                            <div class="mini-img-wraper">
+                                <div class="mini-img" style="background-image: url('../assets/carro1.jpg');"></div>
+                            </div><!--mini-img-wraper-->
+                            <div class="mini-img-wraper">
+                                <div class="mini-img" style="background-image: url('../assets/carro1.jpg');"></div>
+                            </div><!--mini-img-wraper-->
+                            <div class="mini-img-wraper">
+                                <div class="mini-img" style="background-image: url('../assets/carro1.jpg');"></div>
+                            </div><!--mini-img-wraper-->
+                            <div class="mini-img-wraper">
+                                <div class="mini-img" style="background-image: url('../assets/carro1.jpg');"></div>
+                            </div><!--mini-img-wraper-->
+                        </div><!--nav-galeria-wraper-->
+                    </div><!--nav-galeria-->
+                </div><!--nav-galeria-parent-->
+            </div><!--info-veiculo-->
+
+            <div class="descricao-veiculo">
+                <h2>R$20.000,00</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id enim rhoncus, mattis lacus quis,
+                    facilisis sapien. Aliquam dapibus vitae massa id gravida.</p>
+                <a class="btn1" href="">Entre em contato</a>
+            </div><!--descricao-veiculo-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </section>
+
+
+
+
+    <section class="contato">
+        <div class="line-titulo">
+            <div class="ln1"></div><!--ln1-->
+            <h2>Contato</h2>
+
+        </div><!--line-titulo-->
+
+        <form>
+            <div class="input-wraper w100">
+                <input type="text" placeholder="Nome*" required>
+            </div><!--w100-->
+
+            <div class="input-wraper w50">
+                <input type="text" placeholder="E-mail*" required>
+            </div><!--w50-->
+
+            <div class="input-wraper w50">
+                <input type="text" placeholder="Telefone*" required>
+            </div><!--w50-->
+
+            <div class="input-wraper w100">
+                <textarea placeholder="Mensagem*" required></textarea>
+            </div><!--w100-->
+
+            <div class="input-wraper w100">
+                <input class="btn1" type="submit" value="Enviar">
+            </div><!--w100-->
+            <div class="clear"></div><!--clear-->
+        </form>
+    </section><!--contato-->
+
+    <section class="veiculos-destaque">
+        <div class="line-titulo">
+            <div class="ln1"></div><!--ln1-->
+            <h2>Veículos em destaque</h2>
+        </div><!--line-titulo-->
+        <div class="container">
+            <div class="vitrine-destaque">
+                <div style="background-image: url('../assets/carro1.jpg')" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Volkswagen Kermann-ghiaa</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('../assets/carro1.jpg')" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Volkswagen Kermann-ghiaa</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('../assets/carro1.jpg')" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Volkswagen Kermann-ghiaa</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--veiculos-destaque-->
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a style="color: red;" href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <p> Todos os direitos reservados</p>
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </footer>
+
+</body>
+
+</html>

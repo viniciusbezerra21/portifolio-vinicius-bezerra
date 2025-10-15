@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário - WeddingEasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="./index.html" class="logo">
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span class="logo-text">WeddingEasy</span>
+                </a>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="funcionalidades.html" class="nav-link">Funcionalidades</a>
+                    <a href="modulos.html" class="nav-link">Módulos</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+                <button id="hamburgerBtn" class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="calendar-page">
+            <div class="container">
+                <div class="calendar-header">
+                    <div class="calendar-title-section">
+                        <h1 class="calendar-title">Calendário do Casamento</h1>
+                        <p class="calendar-description">Organize todas as datas importantes e compromissos do seu grande dia</p>
+                    </div>
+                    <div class="calendar-actions">
+                        <button class="btn btn-primary">
+                            <svg class="plus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                            Novo Evento
+                        </button>
+                    </div>
+                </div>
+
+                <div class="calendar-layout">
+                    <div class="calendar-main">
+                        <div class="calendar-controls-card">
+                            <div class="calendar-controls">
+                                <div class="calendar-nav">
+                                    <button class="nav-btn">
+                                        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <polyline points="15,18 9,12 15,6"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="calendar-month">Agosto 2024</h2>
+                                    <button class="nav-btn">
+                                        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <polyline points="9,18 15,12 9,6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="view-modes">
+                                    <button class="view-btn active">Mês</button>
+                                    <button class="view-btn">Semana</button>
+                                    <button class="view-btn">Dia</button>
+                                </div>
+                            </div>
+
+                            <div class="calendar-grid">
+                                <div class="calendar-header-row">
+                                    <div class="calendar-day-header">Dom</div>
+                                    <div class="calendar-day-header">Seg</div>
+                                    <div class="calendar-day-header">Ter</div>
+                                    <div class="calendar-day-header">Qua</div>
+                                    <div class="calendar-day-header">Qui</div>
+                                    <div class="calendar-day-header">Sex</div>
+                                    <div class="calendar-day-header">Sáb</div>
+                                </div>
+                                <div class="calendar-days">
+                                    <div class="calendar-day other-month">28</div>
+                                    <div class="calendar-day other-month">29</div>
+                                    <div class="calendar-day other-month">30</div>
+                                    <div class="calendar-day other-month">31</div>
+                                    <div class="calendar-day">1</div>
+                                    <div class="calendar-day">2</div>
+                                    <div class="calendar-day">3</div>
+                                    <div class="calendar-day">4</div>
+                                    <div class="calendar-day">5</div>
+                                    <div class="calendar-day">6</div>
+                                    <div class="calendar-day">7</div>
+                                    <div class="calendar-day">8</div>
+                                    <div class="calendar-day">9</div>
+                                    <div class="calendar-day">10</div>
+                                    <div class="calendar-day">11</div>
+                                    <div class="calendar-day">12</div>
+                                    <div class="calendar-day">13</div>
+                                    <div class="calendar-day">14</div>
+                                    <div class="calendar-day has-event">
+                                        15
+                                        <div class="event-dot"></div>
+                                    </div>
+                                    <div class="calendar-day">16</div>
+                                    <div class="calendar-day">17</div>
+                                    <div class="calendar-day has-event">
+                                        18
+                                        <div class="event-dot"></div>
+                                    </div>
+                                    <div class="calendar-day">19</div>
+                                    <div class="calendar-day">20</div>
+                                    <div class="calendar-day">21</div>
+                                    <div class="calendar-day has-event">
+                                        22
+                                        <div class="event-dot"></div>
+                                    </div>
+                                    <div class="calendar-day">23</div>
+                                    <div class="calendar-day">24</div>
+                                    <div class="calendar-day has-event">
+                                        25
+                                        <div class="event-dot"></div>
+                                    </div>
+                                    <div class="calendar-day">26</div>
+                                    <div class="calendar-day">27</div>
+                                    <div class="calendar-day">28</div>
+                                    <div class="calendar-day">29</div>
+                                    <div class="calendar-day">30</div>
+                                    <div class="calendar-day">31</div>
+                                    <div class="calendar-day other-month">1</div>
+                                    <div class="calendar-day other-month">2</div>
+                                    <div class="calendar-day other-month">3</div>
+                                    <div class="calendar-day other-month">4</div>
+                                    <div class="calendar-day other-month">5</div>
+                                    <div class="calendar-day other-month">6</div>
+                                    <div class="calendar-day other-month">7</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upcoming-events-card">
+                            <div class="events-header">
+                                <h3>Próximos Eventos</h3>
+                                <div class="events-actions">
+                                    <button class="action-btn">
+                                        <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46 22,3"/>
+                                        </svg>
+                                    </button>
+                                    <button class="action-btn">
+                                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <path d="M21 21l-4.35-4.35"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="events-list">
+                                <div class="event-item high-priority">
+                                    <div class="event-content">
+                                        <h4 class="event-title">Reunião com Fotógrafo</h4>
+                                        <div class="event-details">
+                                            <div class="event-detail">
+                                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                                </svg>
+                                                15/08/2024
+                                            </div>
+                                            <div class="event-detail">
+                                                <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <polyline points="12,6 12,12 16,14"/>
+                                                </svg>
+                                                14:00
+                                            </div>
+                                        </div>
+                                        <div class="event-location">
+                                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                                <circle cx="12" cy="10" r="3"/>
+                                            </svg>
+                                            Studio Fotográfico
+                                        </div>
+                                    </div>
+                                    <span class="event-type meeting">Reunião</span>
+                                </div>
+
+                                <div class="event-item high-priority">
+                                    <div class="event-content">
+                                        <h4 class="event-title">Degustação do Buffet</h4>
+                                        <div class="event-details">
+                                            <div class="event-detail">
+                                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                                </svg>
+                                                18/08/2024
+                                            </div>
+                                            <div class="event-detail">
+                                                <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <polyline points="12,6 12,12 16,14"/>
+                                                </svg>
+                                                19:00
+                                            </div>
+                                        </div>
+                                        <div class="event-location">
+                                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                                <circle cx="12" cy="10" r="3"/>
+                                            </svg>
+                                            Restaurante Elegance
+                                        </div>
+                                    </div>
+                                    <span class="event-type tasting">Degustação</span>
+                                </div>
+
+                                <div class="event-item medium-priority">
+                                    <div class="event-content">
+                                        <h4 class="event-title">Prova do Vestido</h4>
+                                        <div class="event-details">
+                                            <div class="event-detail">
+                                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                                </svg>
+                                                22/08/2024
+                                            </div>
+                                            <div class="event-detail">
+                                                <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <polyline points="12,6 12,12 16,14"/>
+                                                </svg>
+                                                15:30
+                                            </div>
+                                        </div>
+                                        <div class="event-location">
+                                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                                <circle cx="12" cy="10" r="3"/>
+                                            </svg>
+                                            Atelier Noiva Bella
+                                        </div>
+                                    </div>
+                                    <span class="event-type fitting">Prova</span>
+                                </div>
+
+                                <div class="event-item medium-priority">
+                                    <div class="event-content">
+                                        <h4 class="event-title">Reunião com Decorador</h4>
+                                        <div class="event-details">
+                                            <div class="event-detail">
+                                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                                </svg>
+                                                25/08/2024
+                                            </div>
+                                            <div class="event-detail">
+                                                <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <polyline points="12,6 12,12 16,14"/>
+                                                </svg>
+                                                10:00
+                                            </div>
+                                        </div>
+                                        <div class="event-location">
+                                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                                <circle cx="12" cy="10" r="3"/>
+                                            </svg>
+                                            Escritório Decor & Arte
+                                        </div>
+                                    </div>
+                                    <span class="event-type meeting">Reunião</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar-sidebar">
+                        <div class="stats-card">
+                            <h3>Resumo</h3>
+                            <div class="stats-list">
+                                <div class="stat-row">
+                                    <span>Eventos este mês</span>
+                                    <span class="stat-value">4</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Dias até o casamento</span>
+                                    <span class="stat-value highlight">127</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Tarefas pendentes</span>
+                                    <span class="stat-value warning">8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-card">
+                            <h3>Timeline do Casamento</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>12 meses antes</h4>
+                                        <ul>
+                                            <li>Definir data e local</li>
+                                            <li>Lista de convidados inicial</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>9 meses antes</h4>
+                                        <ul>
+                                            <li>Contratar fotógrafo</li>
+                                            <li>Escolher buffet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>6 meses antes</h4>
+                                        <ul>
+                                            <li>Finalizar decoração</li>
+                                            <li>Música e DJ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>3 meses antes</h4>
+                                        <ul>
+                                            <li>Confirmações finais</li>
+                                            <li>Últimos ajustes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>1 mês antes</h4>
+                                        <ul>
+                                            <li>Lista final de convidados</li>
+                                            <li>Cronograma do dia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-actions-card">
+                            <h3>Ações Rápidas</h3>
+                            <div class="quick-actions">
+                                <button class="quick-action">
+                                    <svg class="bell-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                                    </svg>
+                                    <span>Configurar Lembretes</span>
+                                </button>
+                                <button class="quick-action">
+                                    <svg class="users-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                    <span>Convidar Fornecedores</span>
+                                </button>
+                                <button class="quick-action">
+                                    <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    <span>Sincronizar Calendário</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="logo-text">WeddingEasy</span>
+                    </a>
+                    <p class="footer-description">
+                        Transforme o planejamento do seu casamento em uma experiência única e inesquecível.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                        <li><a href="modulos.html">Módulos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-modules">
+                    <h3>Módulos</h3>
+                    <ul>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><span class="disabled">Orçamento</span></li>
+                        <li><span class="disabled">Contratos</span></li>
+                        <li><span class="disabled">Lista de Itens</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 WeddingEasy. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+
+            mobileMenu.classList.toggle('active');
+            hamburgerBtn.classList.toggle('hamburger-active');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobileMenu');
+                    const hamburgerBtn = document.getElementById('hamburgerBtn');
+                    mobileMenu.classList.remove('active');
+                    hamburgerBtn.classList.remove('hamburger-active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

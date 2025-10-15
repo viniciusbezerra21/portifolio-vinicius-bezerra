@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling - ScrollUp!</title>
+    <link rel="stylesheet" href="css/stylebook.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="signup-button">Cadastre-se</div>
+                <div class="header-right">
+                    <a href="index.html"><img src="assets/page-tittle.png" alt="" class="logo"></a>
+                    <div class="search-container">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/396a0eb611aa41a87249d9754fa4d55f4bc3c9d7?placeholderIfAbsent=true&apiKey=469110df1522416cb733e45b7c0f1dbb" alt="Search" class="search-icon" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="content-grid">
+                    <!-- Left Column -->
+                    <div class="left-column">
+                        <!-- Hero Section -->
+                        <div class="hero-section">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c97d80288f23561d53bb479c13f9977c15ba75bb?placeholderIfAbsent=true&apiKey=469110df1522416cb733e45b7c0f1dbb" alt="Background" class="hero-background" />
+                            <div class="hero-content">
+                                <div class="title-with-icon">
+                                    <h1 class="hero-title">Solo Leveling Volume 1.</h1>
+                                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/33ab898282422f921aa73697330b961ab3af09ad?placeholderIfAbsent=true&apiKey=469110df1522416cb733e45b7c0f1dbb" alt="Icon" class="hero-icon" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Description Section -->
+                        <div class="description-section">
+                            <p class="description-text">
+                                Prepare-se para entrar em um mundo onde caçar monstros é parte da rotina! <br />
+                                Em Solo Leveling – Volume 1, conhecemos Sung Jin-Woo, o caçador mais fraco de todos. <br /><br />
+                                Sem habilidades especiais, ele arrisca a vida em masmorras perigosas apenas para sobreviver. <br /><br />
+                                Mas tudo muda quando uma misteriosa missão secreta aparece após uma caçada desastrosa. Agora, Jin-Woo tem a chance de se tornar mais forte... muito mais forte. <br /><br />
+                                Uma história cheia de ação, evolução e batalhas épicas, perfeita para fãs de fantasia, RPGs e reviravoltas de tirar o fôlego!
+                            </p>
+                        </div>
+                        <div class="buttons-container">
+                            <button class="action-button add-to-cart">
+                              Adicione ao Carrinho
+                            </button>
+                            <button class="action-button purchase">Adquirir</button>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Book Cover Carousel -->
+                    <div class="right-column">
+                        <div class="book-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <img src="images/solo-leveling-banner.png" alt="Solo Leveling Volume 1 Cover" class="book-cover" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/the-begnning-after-the-end-banner.png" alt="The Beginning After The End Cover" class="book-cover" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/baskerville-banner.png" alt="Baskerville Cover" class="book-cover" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/infinity-mage-banner.png" alt="Infinity Mage Cover" class="book-cover" />
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/stellar-swordmaster-banner.png" alt="Stellar Swordmaster Cover" class="book-cover" />
+                                </div>
+                            </div>
+                            
+                            <div class="bullets-nav">
+                                <div class="bullet-nav active" data-slide="0"></div>
+                                <div class="bullet-nav" data-slide="1"></div>
+                                <div class="bullet-nav" data-slide="2"></div>
+                                <div class="bullet-nav" data-slide="3"></div>
+                                <div class="bullet-nav" data-slide="4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="social-icons">
+                <img src="assets/instagram-icon.png" alt="" class="social-icon">
+                <img src="assets/whatsapp-icon.png" alt="" class="social-icon">
+                <img src="assets/X-icon.png" alt="" class="social-icon">
+                <img src="assets/youtube-icon.png" alt="" class="social-icon">
+                <img src="assets/tiktok-icon.png" alt="" class="social-icon">
+            </div>
+            <div class="footer-divider"></div>
+            <div class="copyright">© - 2025 ScrollUp! Todos os direitos reservados.</div>
+        </div>
+    </div>
+
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const bullets = document.querySelectorAll('.bullet-nav');
+        const totalSlides = slides.length;
+
+        // Auto-advance carousel
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            bullets[currentSlide].classList.remove('active');
+            
+            currentSlide = (currentSlide + 1) % totalSlides;
+            
+            slides[currentSlide].classList.add('active');
+            bullets[currentSlide].classList.add('active');
+        }
+
+        // Manual navigation
+        bullets.forEach((bullet, index) => {
+            bullet.addEventListener('click', () => {
+                slides[currentSlide].classList.remove('active');
+                bullets[currentSlide].classList.remove('active');
+                
+                currentSlide = index;
+                
+                slides[currentSlide].classList.add('active');
+                bullets[currentSlide].classList.add('active');
+            });
+        });
+
+        // Auto-advance every 4 seconds
+        setInterval(nextSlide, 4000);
+    </script>
+</body>
+</html>

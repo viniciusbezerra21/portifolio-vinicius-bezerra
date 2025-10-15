@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto 5">
+    <meta name="author" content="Vinicius">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Projeto 5</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/logo.jpg">
+            </div><!--logo-->
+
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html" style="color: red;">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav><!--desktop-->
+            <nav class="mobile">
+                <ul>
+                    <li><a href="index.html" style="color: red;">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav><!--mobile-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="text-banner">
+                <div class="text-banner-single">Consultoria</div>
+                <div class="text-banner-single">Compra</div>
+                <div class="text-banner-single">Venda</div>
+                <div class="text-banner-single">email@hotmail.com</div>
+            </div><!--text-banner-->
+        </div><!--container-->
+    </section><!--banner-->
+
+    <section class="veiculos-destaque">
+        <div class="line-titulo">
+            <div class="ln1"></div><!--ln1-->
+            <h2>Veículos em destaque</h2>
+        </div><!--line-titulo-->
+        <div class="container">
+            <div class="vitrine-destaque">
+                <div style="background-image: url('../assets/carro1.jpg')" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Volkswagen Kermann-ghiaa</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('../assets/carro1.jpg')" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Volkswagen Kermann-ghiaa</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+
+            <div class="vitrine-destaque">
+                <div style="background-image: url('../assets/carro1.jpg')" class="carro-img"></div>
+                <div class="info-carro">
+                    <h2>Volkswagen Kermann-ghiaa</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais detalhes</a>
+                </div><!--info-carro-->
+            </div><!--vitrine-destaque-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--veiculos-destaque-->
+
+    <section class="servicos-descricao">
+        <div class="half1">
+            <div class="half1-wraper">
+                <h2>servicos</h2>
+                <ul>
+                    <li>Compra</li>
+                    <li>Venda</li>
+                    <li>Consultoria de veiculos</li>
+                    <li>Indicação de mecânicos e peças</li>
+                </ul>
+
+                <a class="btn1" href="">Saiba mais</a>
+            </div><!--haf1-wraper-->
+        </div><!--haf1-->
+
+        <div class="half2">
+            <h2>Depoimentos</h2>
+            <div class="depoimentos-single">
+                <p>"O Rafael foi muito profissional e comprou um carro muito bom
+                    me buscou no aeroporto e o atendimento foi muito bom
+                    test-drive"</p>
+                <div class="navgation">
+                    <div class="arrows">
+                        <img src="../assets/arrow-left.png">
+                        <img src="../assets/arrow-right.png">
+                    </div>
+
+                    <div class="nome-depoimento">Joao da Silva</div>
+
+                </div><!--navigation-->
+            </div><!--depoimentos-single-->
+        </div><!--half2-->
+    </section><!--servicos-descricao-->
+
+
+    <section class="contato">
+        <div class="line-titulo">
+            <div class="ln1"></div><!--ln1-->
+            <h2>Contato</h2>
+
+        </div><!--line-titulo-->
+
+        <form>
+            <div class="input-wraper w100">
+                <input type="text" placeholder="Nome*" required>
+            </div><!--w100-->
+
+            <div class="input-wraper w50">
+                <input type="text" placeholder="E-mail*" required>
+            </div><!--w50-->
+
+            <div class="input-wraper w50">
+                <input type="text" placeholder="Telefone*" required>
+            </div><!--w50-->
+
+            <div class="input-wraper w100">
+                <textarea placeholder="Mensagem*" required></textarea>
+            </div><!--w100-->
+
+            <div class="input-wraper w100">
+                <input class="btn1" type="submit" value="Enviar">
+            </div><!--w100-->
+            <div class="clear"></div><!--clear-->
+        </form>
+    </section><!--contato-->
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="color: #eb2d2d;">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <p> Todos os direitos reservados</p>
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </footer>
+    
+</body>
+
+</html>
