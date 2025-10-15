@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Vinicius Bezerra</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal-contato" id="modalContato">
+        <div class="container-contato">
+            <h1>Contato</h1>
+            <div class="container-botoes-modal">
+                <button class="btns-contato whatsapp" id="whatsapp">Meu Whatsapp</button>
+                <button class="btns-contato email" id="email">Meu Email</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" style="transform: scale(0.8); animation: aparecerBotao 1.5s ease forwards;">
+            <iframe id="iframe-modal" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="modal-certificados" id="modalCertificados">
+        <div class="container-certificados">
+            <h1>Certificados</h1>
+            <div class="container-botoes-modal">
+                <button class="btnLinkedin" id="btnLinkedin">Meu Linkedin</button>
+                <button class="btnCurriculo" id="btnCurriculo">Meu curriculo</button>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <h1 class="title">Vinicius Bezerra</h1>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Quem sou eu</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#" id="certificados">Certificados</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="btnContato" id="btnContato">Contato</button>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section scroll-reveal" id="home">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-title">
+                    <h2 class="texto-animado">Bem-vindo ao meu portifólio de programação</h2>
+                </div>
+                <div class="hero-subtitle">
+                    <p class="texto-animado">Iniciei no mundo da programação a aproximadamente um ano, e venho me
+                        dedicando desde então a
+                        aprender cada vez mais sobre esse universo, não só com o desejo de trabalhar mas sim de
+                        desenvolver mais conhecimentos na area</p>
+                </div>
+                <div class="hero-buttons btn-animado">
+                    <button class="btnVerMais" id="btnVerMais" href="#sobre">Ver mais</button>
+                    <button class="btnSobre" id="btnSobre" href="#sobre">Sobre</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-img"></div>
+    </section>
+
+    <section class="habilidades scroll-reveal" id="habilidades">
+        <div class="container-introdução">
+            <h1 class="title texto-animado">Minhas Habilidades.</h1>
+            <p class="subtitle texto-animado">Veja todos os meus conhecimentos adquiridos ao longo desse ano estudando
+                Programação,
+                conclui o curso do Senai, adquiri cursos da Alura e da Danki code para aprender ainda mais.</p>
+        </div>
+        <div class="container-cards">
+            <div class="card front-end-card texto-animado">
+                <div class="card-image front-end texto-animado"></div>
+                <h2 class="card-title texto-animado">Front end - HTML, CSS, Java Script.</h2>
+                <p class="card-description texto-animado">Onde venho focando ultimamente, sinto que preciso melhorar a
+                    parte visual
+                    dos meus trabalhos, ja que desejo ser um Engenheiro de Software.</p>
+            </div>
+            <div class="card back-end-card texto-animado">
+                <div class="card-image back-end texto-animado"></div>
+                <h2 class="card-title texto-animado">Back End - Java & PHP Basicos, logica de programação e MySql.</h2>
+                <p class="card-description texto-animado">Aqui foi onde comecei, entrei para o Programa de Tecnologia e
+                    Inovação
+                    entra21 onde aprendi JAVA e OOP, e no curso do Senai aprendi Logica com PHP.</p>
+            </div>
+            <div class="card java-card texto-animado">
+                <div class="card-image java texto-animado"></div>
+                <h2 class="card-title texto-animado">Principal - Java, onde quero iniciar a carreira.</h2>
+                <p class="card-description texto-animado">Aqui é Onde eu quero começar no mercado de trabalho, venho
+                    focando em
+                    aprender cada vez mais, ja que tenho mais facilidades com o Java.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="meus-projetos scroll-reveal">
+        <h1 class="title texto-animado">Veja alguns dos meus projetos.</h1>
+
+        <div class="container-cards-projetos">
+            <div class="card-projeto" data-src="html/SiteHtmlNoPelo/index.html"><img
+                    src="img/Captura de tela 2025-10-07 093324.png" alt="Planner de sonhos"></div>
+            <div class="card-projeto" data-src="html/ScrollUp/index.html"><img
+                    src="img/Captura de tela 2025-10-07 093837.png" alt="ScrollUp"></div>
+            <div class="card-projeto" data-src="html/Aprendendo-js-assincrono---alura/index.html"><img
+                    src="img/Captura de tela 2025-10-07 093452.png" alt="Curso Alura"></div>
+            <div class="card-projeto" data-src="html/front_do_curso_da_danki5/html/index.html"><img
+                    src="img/Captura de tela 2025-10-07 101413.png" alt="Danki Projeto1"></div>
+            <div class="card-projeto" data-src="html/front_do_curso_da_danki4/html/index.html"><img
+                    src="img/Captura de tela 2025-10-07 101654.png" alt="Danki Projeto2"></div>
+            <div class="card-projeto" data-src="html/front_do_curso_da_danki3/html/index.html"><img
+                    src="img/Captura de tela 2025-10-07 101849.png" alt="Danki Projeto3"></div>
+            <div class="card-projeto" data-src="html/front_do_curso_da_danki2/html/index.html"><img
+                    src="img/Captura de tela 2025-10-07 113117.png" alt="Danki Projeto4"></div>
+        </div>
+    </section>
+
+    <section class="sobre scroll-reveal" id="sobre">
+        <div class="container-sobre-wraper">
+            <div class="foto_sobre"></div>
+            <div class="container-apresentacao">
+                <h1 class="title">Olá me chamo Vinicius!</h1>
+                <p>
+                    Desde sempre fui alguém muito fascinado por este universo, sempre estive em contato direto a tudo
+                    relacionado e com muita vontade de aprender cada vez mais sobre cada coisa, inicialmente tinha um
+                    interesse
+                    muito grande por Engenharia Mecatrônica, mas infelizmente em idas e vindas em alguns cursos do SENAI
+                    percebi
+                    que eu não queria trabalhar na parte da mecânica em si, porém foi durante este
+                    mesmo
+                    curso que eu entrei em contato com a minha primeira linha de código, tínhamos que programar um
+                    Arduino em
+                    C++ pra fazer um robozinho funcionar, e então me despertou uma grande vontade em entender melhor
+                    como tudo
+                    isso funcionava, e foi naquele momento que comecei a estudar Programação, área na qual estou com
+                    muita
+                    vontade de trabalhar e começar agora.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-habilidades">
+        <div class="habilidades-front-end scroll-reveal">
+            <div class="wraper-habilidades-front-end">
+
+                <div class="conteudo-container">
+                    <h1>HTML, CSS, JS e React.</h1>
+                    <p>O Front-end foi meu ponto de partida. No início, eu tinha dificuldades com estilização, mas com o
+                        tempo fui evoluindo. Hoje domino completamente HTML, CSS e o framework React com Vite, além de
+                        estar aprimorando cada vez mais meus conhecimentos em JavaScript.</p>
+                    <a href="https://github.com/viniciusbezerra21">
+                        <button id="btnVerMais">Ver projetos front end</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="habilidades-back-end scroll-reveal">
+            <div class="wraper-habilidades-back-end">
+
+                <div class="conteudo-container">
+                    <h1>PHP e Java para logica.</h1>
+                    <p>Essa é a parte mais importante, a parte lógica dos projetos é onde eu tenho mais facilidade, eu
+                        foquei muito mais nessa parte ao longo do ano pois até no meu curso com meus colegas foi onde
+                        mais
+                        tive demandas nessa aba você apenas encontrara projetos de Lógica de Programação, já que ainda
+                        nao
+                        cresci o suficiente neste campo.</p>
+                    <a href="https://github.com/viniciusbezerra21">
+                        <button id="btnVerMais">Ver projetos back end</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Portifólio pessoal Vinicius Bezerra</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/vinicius.bezerra.313924/" target="_blank"><img src="assets/facebook.png"
+                    alt=""></a>
+            <a href="https://x.com/Viniciu91193163" target="_blank"><img src="assets/prime_twitter.png" alt=""></a>
+            <a href="https://www.instagram.com/vini_bezerra21/" target="_blank"><img src="assets/mdi_instagram.png"
+                    alt=""></a>
+            <a href="https://www.linkedin.com/in/vinicius-bezerra-339a6b326/" target="_blank"><img
+                    src="assets/mdi_linkedin.png" alt=""></a>
+            <a href="https://github.com/viniciusbezerra21" target="_blank"><img src="assets/mdi_github.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault()
+                const id = this.getAttribute('href')
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    transition: 'ease-in'
+                })
+            })
+        })
+
+        const btnVerMais = document.getElementById('btnVerMais');
+        const btnSobre = document.getElementById('btnSobre');
+
+        btnVerMais.addEventListener('click', () => {
+            document.getElementById('habilidades').scrollIntoView({ behavior: 'smooth' });
+        });
+        btnSobre.addEventListener('click', () => {
+            document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+        });
+
+
+
+
+        const elementos = document.querySelectorAll('.scroll-reveal');
+
+        function revelarAoRolar() {
+            const alturaTela = window.innerHeight;
+
+            elementos.forEach(el => {
+                const posicaoTopo = el.getBoundingClientRect().top;
+
+                if (posicaoTopo < alturaTela - 100) {
+                    el.classList.add('visivel');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revelarAoRolar);
+        revelarAoRolar(); // executa uma vez ao carregar
+
+    </script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
