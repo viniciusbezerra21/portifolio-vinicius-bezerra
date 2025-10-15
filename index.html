@@ -82,21 +82,21 @@
                 conclui o curso do Senai, adquiri cursos da Alura e da Danki code para aprender ainda mais.</p>
         </div>
         <div class="container-cards">
-            <div class="card front-end-card texto-animado">
+            <div class="card front-end-card">
                 <div class="card-image front-end texto-animado"></div>
                 <h2 class="card-title texto-animado">Front end - HTML, CSS, Java Script.</h2>
                 <p class="card-description texto-animado">Onde venho focando ultimamente, sinto que preciso melhorar a
                     parte visual
                     dos meus trabalhos, ja que desejo ser um Engenheiro de Software.</p>
             </div>
-            <div class="card back-end-card texto-animado">
+            <div class="card back-end-card">
                 <div class="card-image back-end texto-animado"></div>
                 <h2 class="card-title texto-animado">Back End - Java & PHP Basicos, logica de programação e MySql.</h2>
                 <p class="card-description texto-animado">Aqui foi onde comecei, entrei para o Programa de Tecnologia e
                     Inovação
                     entra21 onde aprendi JAVA e OOP, e no curso do Senai aprendi Logica com PHP.</p>
             </div>
-            <div class="card java-card texto-animado">
+            <div class="card java-card">
                 <div class="card-image java texto-animado"></div>
                 <h2 class="card-title texto-animado">Principal - Java, onde quero iniciar a carreira.</h2>
                 <p class="card-description texto-animado">Aqui é Onde eu quero começar no mercado de trabalho, venho
@@ -203,7 +203,9 @@
                 const id = this.getAttribute('href')
                 document.querySelector(id).scrollIntoView({
                     behavior: 'smooth',
-                    transition: 'ease-in'
+                    transition: 'ease-in-out',
+                    block: 'start',
+                    inline: 'nearest',
                 })
             })
         })
