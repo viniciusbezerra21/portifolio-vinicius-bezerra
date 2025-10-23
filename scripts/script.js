@@ -78,7 +78,9 @@ btnLinkedin.addEventListener('click', () => {
     window.open('https://www.linkedin.com/in/vinicius-bezerra-339a6b326/', '_blank');
 });
 
-const btnCurriculo = document.getElementById('btnCurriculo');
 btnCurriculo.addEventListener('click', () => {
-    window.open('../assets/Vinicius_Bezerra.pdf', '_blank');
+  const link = document.createElement('a');
+  link.href = 'assets/Vinicius_Bezerra.pdf';
+  link.download = 'Curriculo-Vinicius-Bezerra.pdf';
+  link.click();
 });
